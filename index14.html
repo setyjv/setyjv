@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            direction: rtl;
+        }
+
+        .top-img {
+            display: block;
+            width: 100%;
+            height: auto;
+
+        }
+
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            margin-top: 15px;
+            margin-right: 20px;
+            align-items: center;
+            gap: 50px;
+            justify-content: space-between;
+        }
+
+        .search {
+            font-family: vazir;
+            color: #81858b;
+            padding-left: 690px;
+
+        }
+
+        .search-logo {
+            width: 35px;
+        }
+
+        .search-bar {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: #f2f2f2;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 30px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            gap: 10px;
+        }
+
+        .digi-logo {
+            width: 250px;
+        }
+
+        .bell {
+            width: 30px;
+        }
+
+        .cart {
+            width: 30px;
+        }
+
+        .login {
+            text-decoration: none;
+            color: black;
+            font-family: vazir;
+            font-size: larger;
+            padding: 10px;
+            padding-left: 30px;
+            padding-right: 15px;
+            background-color: white;
+            border: none;
+
+        }
+
+        .left-section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: end;
+            gap: 20px;
+            margin-left: 30px;
+        }
+
+        .login-logo {
+            width: 30px;
+            padding-right: 20px;
+        }
+
+        .login2 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border-color: #e0e0e2;
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 14px;
+        }
+
+        .right-section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+
+        }
+
+        .menu {
+            width: 23px;
+        }
+
+        .option {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 30px;
+            gap: 40px;
+
+        }
+
+        .category-text {
+            font-family: vazir;
+            font-size: larger;
+            font-weight: 500;
+        }
+
+        .category {
+            margin-right: 25px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo {
+            width: 25px;
+        }
+
+        .fire {
+            width: 30px;
+        }
+
+        .second-text {
+            font-family: vazir;
+            font-size: medium;
+            font-weight: 300;
+            color: #484242;
+
+        }
+
+        .second-category {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+
+        }
+
+        .btn {
+            color: #f57f17;
+            border: none;
+            font-family: vazir;
+            font-size: medium;
+            background: none;
+        }
+
+        .location {
+            background-color: #f57f1712;
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px;
+            margin-right: 200px;
+        }
+
+        .first-photo {
+            border-radius: 9999px;
+            border: 3px solid;
+            border-color: rgb(212, 21, 155);
+            padding: 3px;
+            width: 100px;
+        }
+
+        .photos {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .image {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+        }
+
+        .caption {
+            font-family: vazir;
+            text-align: center;
+            margin-top: 10px;
+            color: #484242;
+            font-size: medium;
+        }
+
+        .center {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .icons {
+            display: flex;
+            flex-direction: row;
+            gap: 100px;
+            margin-right: 80px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        .first-icon {
+            width: 70px;
+            height: auto;
+        }
+
+        .name {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .dot {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #e0e0e2;
+            border-radius: 9999px;
+            width: 30px;
+            padding: 15px;
+            width: 40px;
+            height: 40px;
+            object-fit: fill;
+        }
+
+        .second-caption {
+            font-family: vazir;
+            text-align: center;
+        }
+
+        .red-box {
+            display: flex;
+            flex-direction: row;
+            background-color: #ef4056;
+            padding: 20px;
+            border-radius: 30px;
+            margin-bottom: 100px;
+
+        }
+
+        .amazing-img {
+            padding: 50px;
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .products {
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+        }
+
+        .product-img {
+            width: 170px;
+            height: 170px;
+            background-color: white;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+        }
+
+        .bottom {
+            background-color: white;
+            padding-bottom: 50px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .description {
+            text-align: center;
+            font-family: vazir;
+            color: #484242;
+            padding: 10px;
+        }
+
+        .price {
+            font-family: vazir;
+            text-align: end;
+            padding-left: 10px;
+            font-size: large;
+            font-weight: 400;
+
+        }
+
+        .number {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .discount {
+            font-family: vazir;
+            font-size: large;
+            font-weight: 400;
+            color: white;
+            background-color: #D32F2F;
+            padding-right: 10px;
+            padding-left: 10px;
+            border-radius: 20px;
+            margin-right: 10px;
+        }
+
+        .last-price {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: end;
+            margin-left: 20px;
+        }
+
+        .ex-price {
+            font-family: vazir;
+            color: #81858b;
+        }
+
+        .timer {
+            background-color: white;
+            font-family: vazir;
+            border-radius: 5px;
+            padding: 8px;
+            font-weight: 600;
+            font-size: larger;
+            margin-bottom: 30px;
+        }
+
+        .right-part {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .time {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            direction: ltr;
+        }
+
+        .colon {
+            color: white;
+            font-size: xx-large;
+            margin-bottom: 30px;
+        }
+
+        .more {
+            font-family: vazir;
+            color: white;
+            font-size: larger;
+            font-weight: 500;
+            margin-top: 10px;
+        }
+
+        .footer-top {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 50px;
+
+        }
+
+        .return-btn {
+            background: none;
+            border-color: #a1a3a8;
+            color: #a1a3a8;
+            border-radius: 5px;
+            padding-left: 50px;
+            margin-left: 20px;
+        }
+
+        .tittle {
+            font-family: vazir;
+            color: #62666d;
+            font-size: 25px;
+            margin-right: 20px;
+        }
+
+        .footer-paragraph {
+            font-family: vazir;
+            color: #62666d;
+        }
+
+        .symbols {
+            width: 90px;
+            border: solid 1px #c8c9ca;
+            padding: 24px;
+            border-radius: 5px;
+            margin-left: 20px;
+        }
+        .footer{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .see-more{
+            color: #19bfd3;
+            font-family: vazir;
+        }
+        .last-paragraph{
+            display: flex;
+            flex-direction: column;
+            margin-right: 20px;
+        }
+        .footer-text{
+            text-align: center;
+            font-family: vazir;
+            color: #62666d;
+padding: 20px;
+        }
+        .companies{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: space-between;
+            margin-left: 20px;
+            margin-right: 20px;
+           padding-bottom: 30px;
+            border-bottom: solid 1px #c8c9ca;
+        }
+        .second-companies{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: space-between;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .all-companies{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            background-color: rgb(230, 230, 230);
+
+        }
+        .company-logo{
+            padding: 20px;
+            width: 150px;
+            border-left:solid 1px #c8c9ca;
+        }
+        .symbols2{
+            width: 70px;
+            border: solid 1px #c8c9ca;
+            padding: 24px;
+            border-radius: 7px;
+            margin-left: 20px;
+        }
+        hr{
+           
+          border: none;
+          border-top: 2px solid #f3f3f3;
+        }
+    </style>
+</head>
+
+<body>
+    <img class="top-img" src="top.webp" alt="دیجیکالا">
+    <div class="navbar">
+        <div class="right-section">
+            <img class="digi-logo" src="full-horizontal.svg" alt="دیجیکالا">
+
+
+            <div class="search-bar">
+                <img class="search-logo" src="search-svgrepo-com.svg" alt="">
+                <span class="search">جستجو</span>
+            </div>
+        </div>
+        <div class="left-section">
+            <img class="bell" src="bell-alt-1-svgrepo-com.svg" alt="">
+            <div class="login2">
+                <img class="login-logo" src="login-svgrepo-com.svg" alt="">
+                <button class="login">ورود | ثبت&zwnj;نام</button>
+            </div>
+            <img class="cart" src="shopping-cart-icon.svg" alt="">
+        </div>
+    </div>
+    <div class="option">
+        <div class="category">
+            <img class="menu" src="hamburger-menu-svgrepo-com.svg" alt="">
+            <span class="category-text">دسته&zwnj;بندی کالاها</span>
+        </div>
+        <div class="second-category">
+            <img class="logo" src="percent-circle-svgrepo-com.svg" alt="">
+            <span class="second-text">شگفت&zwnj;انگیزها</span>
+        </div>
+        <div class="second-category">
+            <img class="logo" src="shopping-basket-svgrepo-com.svg" alt="">
+            <span class="second-text">سوپرمارکت</span>
+        </div>
+        <div class="second-category">
+            <img class="logo" src="gold-finance-invest-svgrepo-com (1).svg" alt="">
+            <span class="second-text">طلای دیجیتال</span>
+        </div>
+        <div class="second-category">
+            <img class="fire" src="fire-alt-svgrepo-com.svg" alt="">
+            <span class="second-text">پرفروش&zwnj;ترین&zwnj;ها</span>
+        </div>
+        <div class="second-category">
+            <img class="logo" src="phone-svgrepo-com.svg" alt="">
+            <span class="second-text">خرید کالای کارکرده</span>
+        </div>
+        <div>
+            <span class="second-text">سوالی دارید؟</span>
+
+        </div>
+        <div>
+            <span class="second-text">در دیجی&zwnj;کالا بفروشید!</span>
+        </div>
+        <div class="location">
+            <img class="logo" src="location-pin-svgrepo-com.svg" alt="">
+            <button class="btn">شهر خود را انتخاب کنید</button>
+        </div>
+    </div>
+    <hr>
+    <div class="photos">
+        <div class="image">
+            <img class="first-photo" src="first.jpg" alt="">
+            <span class="caption">کرم ضد چروک تیلسیم</span>
+        </div>
+        <div class="image">
+            <img class="first-photo" src="second.jpg" alt="">
+            <span class="caption">نکات مهم نصب لباسشویی</span>
+        </div>
+        <div class="image">
+            <img class="first-photo" src="third.jpg" alt="">
+            <span class="caption">بزرگ و سنگین!!</span>
+        </div>
+        <div class="image">
+            <img class="first-photo" src="forth.jpg" alt="">
+            <span class="caption">پاوربانک جاسوئیچی</span>
+        </div>
+        <div class="image">
+            <img class="first-photo" src="fifth.jpg" alt="">
+            <span class="caption">چرا رنگاش تکراری بود؟</span>
+        </div>
+        <div class="image">
+            <img class="first-photo" src="sixth.jpg" alt="">
+            <span class="caption">بررسی هدفون انکر anker</span>
+        </div>
+        <div class="image">
+            <img class="first-photo" src="seventh.jpg" alt="">
+            <span class="caption">براش شور ادایی</span>
+        </div>
+        <div class="image">
+            <img class="first-photo" src="eighth.jpg" alt="">
+            <span class="caption">معرکه اس</span>
+        </div>
+        <div class="image">
+            <img class="first-photo" src="nineth.jpg" alt="">
+            <span class="caption">این قلاده کوله پشتی داره</span>
+        </div>
+        <div class="image">
+            <img class="first-photo" src="tenth.jpg" alt="">
+            <span class="caption">مشاوره خرید لباسشویی</span>
+        </div>
+        <div class="image">
+            <img class="first-photo" src="eleventh.jpg" alt="">
+            <span class="caption">ios 26 اینجاست</span>
+        </div>
+    </div>
+    <img class="center" src="center.webp" alt="">
+    <div class="icons">
+        <div class="name">
+            <img class="first-icon" src="1.png" alt="">
+            <span class="second-caption">طلای دیجیتال <br>قسطی</span>
+        </div>
+        <div class="name">
+            <img class="first-icon" src="2.png" alt="">
+            <span class="second-caption">خرید قسطی</span>
+        </div>
+        <div class="name">
+            <img class="first-icon" src="3.png" alt="">
+            <span class="second-caption">موبایل کارکرده <br>باگارانتی</span>
+        </div>
+        <div class="name">
+            <img class="first-icon" src="4.jpg" alt="">
+            <span class="second-caption">ساعت&zwnj;هوشمند <br>هدفون</span>
+        </div>
+        <div class="name">
+            <img class="first-icon" src="5.jpg" alt="">
+            <span class="second-caption">لوازم<br> سرمایشی</span>
+        </div>
+        <div class="name">
+            <img class="first-icon" src="6.png" alt="">
+            <span class="second-caption">نصب اپ</span>
+        </div>
+        <div class="name">
+            <img class="first-icon" src="7.png" alt="">
+            <span class="second-caption">اشتراک<br>پلاس</span>
+        </div>
+        <div class="name">
+            <img class="first-icon" src="8.png" alt="">
+            <span class="second-caption">انبارتکانی<br>پوشاک</span>
+        </div>
+        <div class="name">
+            <img class="first-icon" src="9.png" alt="">
+            <span class="second-caption">تخفیف<br>بومی&zwnj;محلی</span>
+
+        </div>
+        <div class="name">
+            <img class="dot" src="dot-menu-more-2-svgrepo-com (1).svg" alt="">
+            <span class="second-caption">بیشتر</span>
+        </div>
+    </div>
+    <div class="red-box">
+        <div class="right-part">
+            <img class="amazing-img" src="Amazings.svg" alt="">
+            <div class="time">
+                <span class="timer">02</span>
+                <span class="colon">:</span>
+                <span class="timer">09</span>
+                <span class="colon">:</span>
+                <span class="timer">48</span>
+            </div>
+            <img class="amazing-img2" src="Amazing2.svg" alt="">
+            <span class="more">مشاهده همه > </span>
+        </div>
+        <div class="products">
+            <div class="bottom">
+                <img class="product-img" src="redmi.webp" alt="">
+                <span class="description"><br>گوشی موبایل<br> شیائومی مدل redmi note 13 pro</span>
+                <div class="last-price">
+                    <div class="number">
+                        <span class="discount">3%</span>
+                        <span class="price">
+                            27,999,000 تومان
+                        </span>
+                    </div>
+                    <del class="ex-price">28,999,000</del>
+                </div>
+
+            </div>
+            <div class="bottom">
+                <img class="product-img" src="luxar.webp" alt="">
+                <span class="description"><br>هدفون بلوتوثی لوکسار مدل v8</span>
+
+                <div class="last-price">
+                    <div class="number">
+                        <span class="discount">45%</span>
+                        <span class="price">1,595,000 تومان</span>
+
+                    </div>
+                    <del class="ex-price">1,690,000</del>
+                </div>
+
+
+            </div>
+            <div class="bottom">
+                <img class="product-img" src="xo.webp" alt="">
+                <span class="description">هدفون بلوتوثی ایکس او<br>مدل xo-x40</span>
+                <span class="price">1,300,000 تومان</span>
+            </div>
+            <div class="bottom">
+                <img class="product-img" src="leito.webp" alt="">
+                <span class="description">هندزفری لیتو مدل LE-12</span>
+                <div class="last-price">
+                    <div class="number">
+                        <span class="discount">34%</span>
+                        <span class="price">129,000 تومان</span>
+
+                    </div>
+                    <del class="ex-price">195,000</del>
+                </div>
+
+            </div>
+            <div class="bottom">
+                <img class="product-img" src="gaming.webp" alt="">
+                <span class="description">هدفون مخصوص بازی<br>اونیکوما مدل X20 RGB</span>
+                <span class="price">2,590,000 تومان</span>
+            </div>
+            <div class="bottom">
+                <img class="product-img" src="asus.webp" alt="">
+                <span class="description"><br>لپ تاپ 15.6 اینچی ایسوس<br>مدلVivobook 15</span>
+                <div class="last-price">
+                    <div class="number">
+                        <span class="discount">12%</span>
+                        <span class="price">41,999,000 تومان</span>
+                    </div>
+                    <del class="ex-price">47,899,000</del>
+                </div>
+            </div>
+            <div class="bottom">
+                <img class="product-img" src="lenovo.webp" alt="">
+                <span class="description"><br>لپ تاپ 15.6 <br>اینچی لنوو مدل IdeaPad 1</span>
+                <div class="last-price">
+                    <div class="number">
+                        <span class="discount">9%</span>
+                        <span class="price">17,799,000</span>
+                    </div>
+                    <del class="ex-price">19,500,000</del>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="footer">
+       <div class="last-paragraph">
+         <h1 class="tittle">دیجی کالا بزرگترین فروشگاه اینترنتی ایران</h1>
+        <p class="footer-paragraph">دیجی کالا سال‌ها است که به انتخاب اول بسیاری از خریداران اینترنتی تبدیل شده است.
+            دیجی کالا به عنوان بزرگ‌ترین و معتبرترین فروشگاه آنلاین ایران،<br> شناخته‌شده‌ترین فروشگاه نیز محسوب می‌شود.
+            این فروشگاه آنلاین نه‌تنها گسترده‌ترین تنوع کالا را در دسته‌بندی‌های مختلف ارائه می‌دهد، بلکه با خدمات<br>
+            بی‌نظیر، ارسال سریع، ضمانت اصل بودن کالا و پشتیبانی حرفه‌ای، استاندارد جدیدی در خرید اینترنتی ایران تعریف
+            کرده است. این فروشگاه با سال‌ها تجربه <br>و اعتماد مشتریان، کامل‌ترین و بهترین گزینه برای خرید آنلاین در
+            ایران محسوب می‌شود.</p>
+            <span class="see-more">مشاهده بیشتر></span>
+       </div>
+        <div class="">
+            <img class="symbols2" src="sapra.webp" alt="">
+        <img class="symbols" src="rezi.webp" alt="">
+        <img class="symbols2" src="kasbokar.webp" alt="">
+        <img class="symbols" src="enamad.png" alt="">
+
+        </div>
+    </div>
+    <hr>
+    <div>
+        <p class="footer-text">برای استفاده از مطالب دیجی‌کالا، داشتن «هدف غیرتجاری» و ذکر «منبع» کافیست. تمام حقوق اين وب‌سايت نیز برای شرکت نوآوران فن آوازه (فروشگاه آنلاین دیجی‌کالا) است.</p>
+    </div>
+   <div class="all-companies">
+     <div class="companies">
+        <img class="company-logo" src="digimag.svg" alt="">
+        <img class="company-logo" src="digipay.svg" alt="">
+        <img class="company-logo" src="digistyle.svg" alt="">
+        <img class="company-logo" src="digiplus.svg" alt="">
+        <img class="company-logo" src="jet.svg" alt="">
+        <img class="company-logo" src="digiMehr.svg" alt="">
+        <img class="company-logo" src="diginext.svg" alt="">
+    </div>
+    <div class="second-companies">
+        <img class="company-logo" src="digiexpress.svg" alt="">
+        <img class="company-logo" src="ganjeh.svg" alt="">
+        <img class="company-logo" src="digify.svg" alt="">
+        <img class="company-logo" src="smartech.svg" alt="">
+        <img class="company-logo" src="digikala-business.svg" alt="">
+        <img class="company-logo" src="digikala-service.svg" alt="">
+    </div>
+   </div>
+</body>
+
+</html>
